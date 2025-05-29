@@ -1,0 +1,221 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: odinLogo;
+  src: url('../font/Norse-Bold.otf')
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.3
+}
+
+body {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  padding: 1.35rem;
+  background-color: #eee;
+}
+
+#section-1, #section-2 {
+  flex: 1;
+  padding: 2.5rem 0;
+}
+
+#section-1 {
+  background-image: url('../image/peter-thomas-0B1Sf1eImY8-unsplash.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+#section-1 #logo-container {
+  width: 100%;
+  padding: 1rem;
+  background-color: #25252563;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+#image-credit p {
+  color: #fff;
+  text-align: center;
+  font-size: clamp(0.5rem, 2vw, 0.8rem);
+  a {
+    color: inherit;
+  }
+}
+
+#logo-container #logo {
+  width: 75px;
+  height: auto;
+}
+
+#logo-container .logo-text {
+  color: #fff;
+  font-family: odinLogo;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+
+#section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px #25252548;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#section-2 .form-description {
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.form-description .description {
+  font-weight: bold;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #252525de;
+}
+
+.sign-description {
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  font-weight: bold;
+  margin-top: 0.3rem;
+  color: #252525de
+}
+
+/* form section */
+#form-incredients {
+  background-color: rgba(255, 255, 255, 0.932);
+  padding: 1.5rem 0;
+}
+
+
+h2 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
+#personal-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.form-row {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.form-row label{
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  text-transform: uppercase;
+  color: #252525;
+}
+
+.form-row input {
+  width: 90%;
+  border: 1px solid #eee;
+  outline: none;
+  padding: .2rem;
+}
+
+.form-row input:focus{
+  border-color: rgb(143, 238, 151);
+}
+
+.form-row input:invalid {
+  border-color: rgb(230, 62, 62);
+}
+
+#bottom-container {
+  padding: 0 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+}
+
+button[type='submit'] {
+  width: 150px;
+  display: block;
+  background-color: rgb(129, 187, 129);
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+#bottom-container p {
+  padding-bottom: 1rem;
+  font-size: clamp(.8rem, 2vw , 1rem);
+  color: #252525;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 0;
+    flex-direction: column;
+    height: unset;
+  }
+
+  #section-1 {
+    flex: 1 auto;
+    padding: 1rem;
+    border-radius: 0;
+    padding-bottom: 1rem;
+    #logo-container {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  #section-2 {
+    padding: 0;
+    flex: 5 auto;
+    border-radius: 0;
+  }
+
+  #section-2 #personal-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-row {
+    width: 100%
+  }
+
+  .form-row input {
+    width: 100%
+  }
+
+  #bottom-container {
+    padding-bottom: 2rem;
+    button {
+      width: 100%;
+      order: 1;
+    }
+  }
+}

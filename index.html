@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The odin project Signup page</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <section id="section-1">
     <!-- logo section  -->
+    <div id="logo-container">
+      <img id="logo" src="./icon/odin-lined.png" alt="odin-logo">
+      <p class="logo-text">odin</p>
+    </div>
+
+    <div id="image-credit">
+      <p>Photo by Peter Thoms on <a href="">Splash</a></p>
+    </div>
   </section>
+
   <section id="section-2">
     <div class="form-description">
       <p class="description">
@@ -22,37 +32,38 @@
     </div>
     <!-- form section  -->
      <form action="" method="post">
-
-      <div id="personal-container">
-        <h2>Let's do this!</h2>
-        <div class="form-row">
-          <label for="f-name">First Name</label>
-          <input type="text" id="f-name" name="user-first-name">
-        </div>
-  
-        <div class="form-row">
-          <label for="l-name">Last Name</label>
-          <input type="text" id="l-name" name="user-last-name">
-        </div>
-  
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" name="user-email" id="email">
-        </div>
-  
-        <div class="form-row">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="user-phone">
-        </div>
-  
-        <div class="form-row">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="user-password">
-        </div>
-  
-        <div class="form-row">
-          <label for="c-password">Confirm Password</label>
-          <input type="password" id="c-password" name="user-c-password">
+      <div id="form-incredients">
+        <h2>Let's do This!</h2>
+        <div id="personal-container">
+          <div class="form-row">
+            <label for="f-name">First Name</label>
+            <input type="text" id="f-name" name="user-first-name">
+          </div>
+    
+          <div class="form-row">
+            <label for="l-name">Last Name</label>
+            <input type="text" id="l-name" name="user-last-name">
+          </div>
+    
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" name="user-email" id="email">
+          </div>
+    
+          <div class="form-row">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="user-phone">
+          </div>
+    
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="user-password">
+          </div>
+    
+          <div class="form-row">
+            <label for="c-password">Confirm Password</label>
+            <input type="password" id="c-password" name="user-c-password">
+          </div>
         </div>
       </div>
 
