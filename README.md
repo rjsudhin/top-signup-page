@@ -27,8 +27,8 @@ A simple and responsive signup page built using **HTML** and **CSS**. This proje
 
 ## 📷 Preview
 
-![Signup Page Screenshot](screenshot.png)  
-*Replace this with your actual screenshot.*
+![Signup Page Screenshot](./image/singup-page-screen-short.png)  
+
 
 ---
 
