@@ -134,16 +134,18 @@ h2 {
 
 .form-row input {
   width: 90%;
-  border: 1px solid #eee;
+  border: 1px solid #7a7979;
   outline: none;
-  padding: .2rem;
+  padding: .3rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
 }
 
-.form-row input:focus{
-  border-color: rgb(143, 238, 151);
+.form-row input:valid {
+  border-color: rgb(43, 170, 53);
 }
 
-.form-row input:invalid {
+.form-row input:focus:invalid {
   border-color: rgb(230, 62, 62);
 }
 
